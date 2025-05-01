@@ -1,8 +1,13 @@
 # homewor(-html-css)
 
+** css-units(output):
+![image](https://github.com/user-attachments/assets/9e0f5283-a7a1-4328-9cf5-e7fbb0b30e31)
+
+** css-grid(output):
+https://github.com/user-attachments/assets/8d9acc64-3c5b-464c-9919-d1c0c368b43b
 
 
-**image-hover(output):
+** image-hover(output):
 https://github.com/user-attachments/assets/55630daa-a711-4435-90f5-1e86af715a87
 
 ** Masking-image(output):
