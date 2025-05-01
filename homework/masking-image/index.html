@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Masking Effect</title>
+  <style>
+    body {
+      background-color: white;
+      color:#fff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 30px;
+    }
+
+    .mask-container {
+      display: flex;
+      justify-content: center;
+      gap: 0px;
+      margin-top: 20px;
+    }
+
+    .img-box {
+      width: 400px;
+      height: 250px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .original {
+      background-image: url("bappa.jpg");
+    }
+
+    .masked {
+      background-image: url("bappa.jpg");
+      -webkit-mask-image: linear-gradient(to top, black, transparent);
+      mask-image: linear-gradient(to top, black, transparent);
+      -webkit-mask-size: 99% 99%;
+      mask-size: 100% 100%;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="mask-container">
+    <div class="img-box original"></div>
+    <div class="img-box masked"></div>
+  </div>
+</body>
+</html>
