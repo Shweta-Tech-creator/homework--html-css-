@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Snap Effect</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 210vh;
+            margin: 0;
+            flex-direction: column;
+        }
+        .scroll-container, .scroll-container4 {
+            display: flex;
+            overflow-x: scroll;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+        }
+
+        .scroll-container {
+            scroll-snap-type: x mandatory;
+        }
+
+        .scroll-container4 {
+            scroll-snap-type: x proximity;
+        }
+        .scroll-container2, .scroll-container5 {
+            display: flex;
+            flex-direction: column;
+            overflow-y: scroll;
+            width: 300px;
+            height: 300px;
+            border: 1px solid #ccc;
+        }
+
+        .scroll-container2 {
+            scroll-snap-type: y mandatory;
+        }
+
+        .scroll-container5 {
+            scroll-snap-type: y proximity;
+        }
+
+
+        .scroll-container3, .scroll-container6 {
+            display: grid;
+            grid-template-columns: repeat(2, 300px);
+            grid-template-rows: repeat(2, 300px);
+            overflow: scroll;
+            width: 300px;
+            height: 300px;
+            gap: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .scroll-container3 {
+            scroll-snap-type: both mandatory;
+        }
+
+        .scroll-container6 {
+            scroll-snap-type: both proximity;
+        }
+
+
+        .scroll-item {
+            scroll-snap-align: start;
+            flex: none;
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3em;
+            color: white;
+        }
+
+        .scroll-container4 .scroll-item, 
+        .scroll-container5 .scroll-item, 
+        .scroll-container6 .scroll-item {
+            scroll-snap-align: center;
+        }
+        .scroll-item:not(:last-child) {
+            margin-right: 20px; 
+            margin-bottom: 20px; 
+        }
+
+        .item-1 { background-color: black; }
+        .item-2 { background-color: orange; }
+        .item-3 { background-color: grey; }
+        .item-4 { background-color: rgb(194, 29, 194); }
+    </style>
+</head>
+<body>
+    <h4>On all examples, scroll slowly to feel the snap points</h4>
+
+    <h5>scroll-snap-type: x-mandatory</h5>
+    <div class="scroll-container">
+        <div class="scroll-item"><img src="bappa1.webp" alt="Image 1" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa2.jpg" alt="Image 2" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa3.jpeg" alt="Image 3" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa4.jpeg" alt="Image 4" width="300" height="300"></div>
+    </div>
+    
+
+    <h5>scroll-snap-type: y-mandatory</h5>
+    <div class="scroll-container2">
+        <div class="scroll-item"><img src="bappa1.webp" alt="Image 1" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa2.jpg" alt="Image 2" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa3.jpeg" alt="Image 3" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa4.jpeg" alt="Image 4" width="300" height="300"></div>
+    </div>
+
+    <h5>scroll-snap-type: both mandatory</h5>
+    <div class="scroll-container3">
+        <div class="scroll-item"><img src="bappa1.webp" alt="Image 1" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa2.jpg" alt="Image 2" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa3.jpeg" alt="Image 3" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa4.jpeg" alt="Image 4" width="300" height="300"></div>
+    </div>
+
+    <h5>scroll-snap-type: x-proximity</h5>
+    <div class="scroll-container4">
+        <div class="scroll-item"><img src="bappa1.webp" alt="Image 1" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa2.jpg" alt="Image 2" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa3.jpeg" alt="Image 3" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa4.jpeg" alt="Image 4" width="300" height="300"></div>
+    </div>
+
+    <h5>scroll-snap-type: y-proximity</h5>
+    <div class="scroll-container5">
+        <div class="scroll-item"><img src="bappa1.webp" alt="Image 1" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa2.jpg" alt="Image 2" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa3.jpeg" alt="Image 3" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa4.jpeg" alt="Image 4" width="300" height="300"></div>
+    </div>
+
+    <h5>scroll-snap-type: both proximity</h5>
+    <div class="scroll-container6">
+        <div class="scroll-item"><img src="bappa1.webp" alt="Image 1" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa2.jpg" alt="Image 2" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa3.jpeg" alt="Image 3" width="300" height="300"></div>
+        <div class="scroll-item"><img src="bappa4.jpeg" alt="Image 4" width="300" height="300"></div>
+    </div>
+</body>
+</html>
