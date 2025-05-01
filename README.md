@@ -1,4 +1,4 @@
-# homewor(-html-css)
+# homework(-html-css)
 ** css-units(output):
 ![image](https://github.com/user-attachments/assets/9e0f5283-a7a1-4328-9cf5-e7fbb0b30e31)
 
