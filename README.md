@@ -11,7 +11,7 @@ https://github.com/user-attachments/assets/8d9acc64-3c5b-464c-9919-d1c0c368b43b
 https://github.com/user-attachments/assets/55630daa-a711-4435-90f5-1e86af715a87
 
 ** Masking-image(output):
-![image](https://github.com/user-attachments/assets/71b39bb1-a08c-472a-ae69-4b34147b4bc3)
+![image](https://github.com/user-attachments/assets/f9e148bc-fd4f-48bb-a782-ebc8a7465490)
 
 
 ** Shape-outside(output):
