@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Outside CSS</title>
+    <style>
+        body {
+            background-color: white;
+            text-align: justify;
+            padding: 20px;
+        }
+
+        .circle {
+            float: left;
+            width: 300px;
+            height: 300px;
+            shape-outside: circle(50%);
+            -webkit-shape-outside: circle(50%);
+            clip-path: circle(50%);
+            -webkit-clip-path: circle(50%);
+            background-color: crimson;
+            margin-right: 20px;
+        }
+
+        .content {
+            overflow: hidden;
+        }
+
+        h1 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="circle"></div>
+        <h1>Shape Outside CSS Property</h1>
+        <p>The headline of the paragraph lacks a refined structure. Elegant styling should align with clear purpose, yet in this case, it seems disconnected. Soft statements repeat themselves, and direction appears uncertain. Visual design should be clean and purposeful, creating balance and clarity. When people come together—whether in collaboration or union—there must be a strong foundation and clear intent. It's important to stay focused, avoiding distractions or overly comfortable choices. Let us approach challenges thoughtfully, with grace and steady effort. A professional presence blends confidence, elegance, and simplicity. In the end, wisdom lies in balance, timing, and quiet strength.</p>
+    </div>
+</body>
+</html>

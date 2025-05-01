@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Units Practice</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .box-container {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    .box {
+      background-color: #4CAF50;
+      color: white;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: bold;
+    }
+    .box1 {
+      max-width: 150px;
+      padding: 2rem;
+    }
+    .box2 {
+      width: 15vw;
+      height: 30vh;
+    }
+    .box3 {
+      width: 15%;
+      height: 25%;
+    }
+    .box4 {
+      width: 15vmin;
+      height: 40vmin;
+    }
+    .box5 {
+      width: 15em;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Units Practice</h1>
+  <div class="box-container">
+    <div class="box box1">This box uses rem for padding and px for max-width</div>
+    <div class="box box2">This box uses vw for width and vh for height</div>
+    <div class="box box3">This box uses % for width and height</div>
+    <div class="box box4">This box uses vmin for width and height</div>
+    <div class="box box5">This box uses em for width and font-size</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Collecting Random Items</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.2rem;
+    }
+
+    p.subtitle {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      color: #666;
+    }
+
+    .section {
+      background: #fff;
+      padding: 155px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .item {
+      background-color: #f9f9f9;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .item img {
+      width: 100%;
+      max-height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .item strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 0.3rem;
+    }
+
+    h2 {
+      margin: 20px 0 10px;
+      font-size: 1.6rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Collecting Random Items</h1>
+  <p class="subtitle">Discover random items we are collecting today. Who knows what we might find?</p>
+
+  <div class="section">
+    <div class="grid">
+      <div class="item">
+        <img src="socks.ico" alt="Socks">
+        <strong>Socks</strong>
+        The mystery of always losing one sock...
+      </div>
+      <div class="item">
+        <img src="cup.ico" alt="Coffee Cups">
+        <strong>Coffee Cups</strong>
+        Why do we always have 10 half-drunk coffee cups?
+      </div>
+      <div class="item">
+        <img src="pizza.ico" alt="Pizza Boxes">
+        <strong>Pizza Boxes</strong>
+        The only thing better than pizza is more pizza.
+      </div>
+      <div class="item">
+        <img src="cookies.ico" alt="Cookies">
+        <strong>Cookies</strong>
+        Warning: May cause sugar rush and crumbs.
+      </div>
+      <div class="item">
+        <img src="toys.ico" alt="Toys">
+        <strong>Toys</strong>
+        Do these toys ever get used? Who knows.
+      </div>
+      <div class="item">
+        <img src="plant.ico" alt="Plants">
+        <strong>Plants</strong>
+        They never stop growing, just like your love for them!
+      </div>
+    </div>
+  </div>
+
+  <h2>Masonry Layout Mode!</h2>
+
+  <div class="section">
+    <div class="grid">
+      <div class="item">
+        <img src="laptop.ico" alt="Laptops">
+        <strong>Laptops</strong>
+        How many laptops can one person have?
+      </div>
+      <div class="item">
+        <img src="phone.ico" alt="Phones">
+        <strong>Phones</strong>
+        Who knew they would outlast friendships?
+      </div>
+      <div class="item">
+        <img src="toothbrush.ico" alt="Toothbrushes">
+        <strong>Toothbrushes</strong>
+        How many toothbrushes do you really need?
+      </div>
+      <div class="item">
+        <img src="books.ico" alt="Books">
+        <strong>Books</strong>
+        A library inside every home.
+      </div>
+      <div class="item">
+        <img src="shoes.ico" alt="Shoes">
+        <strong>Shoes</strong>
+        Matching shoes? Never.
+      </div>
+      <div class="item">
+        <img src="hats.ico" alt="Hats">
+        <strong>Hats</strong>
+        Just one hat, they said. You don't need more...
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
